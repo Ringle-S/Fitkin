@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FITKINCLUB</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./jquery.min.js"></script>
+    <link rel="shortcut icon" href="./img/gym.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- banner section -->
+
+      <div class="banner-container">
+        <nav>
+          <div class="nav-brand">
+            <img src="./icons/Group 32.svg" alt="" />
+          </div>
+          <ul id="nav-links">
+            <li>
+              <a style="color: #fe0000" class="active" href="./index.html"
+                >HOME</a
+              >
+            </li>
+            <li><a href="./store.html">STORE</a></li>
+            <li><a href="./blog.html">BLOGS</a></li>
+            <li><a href="./about.html">ABOUT US</a></li>
+            <li><a href="./contact.html">CONTACT US</a></li>
+          </ul>
+          <ul id="nav-icons">
+            <li>
+              <a href="#"><img src="./icons/cart.svg" alt="" /></a>
+            </li>
+          </ul>
+          <img class="mob-btn" src="./icons/menu.png" alt="" />
+
+          <nav class="mob-navigation-menu">
+            <a style="color: #fe0000" class="active" href="./index.html"
+              ><i class="fas fa-home home"></i> Home</a
+            >
+            <a href="./store.html"
+              ><i class="fas fa-align-left about"></i> Store</a
+            >
+            <a href="./blog.html"><i class="fab fa-buffer works"></i> Blogs</a>
+            <a href="./about.html"
+              ><i class="fas fa-users team"></i> About us</a
+            >
+            <a href="./contact.html"
+              ><i class="fas fa-headset contact"></i> Contact us</a
+            >
+            <a href="./contact.html"
+              ><i class="fas fa-headset contact"></i> Cart</a
+            >
+            <a href="./contact.html"
+              ><i class="fas fa-headset contact"></i> Profile</a
+            >
+          </nav>
+        </nav>
+
+        <div class="carousel">
+          <div class="carousel-item item-one">
+            <div class="carousel-content">
+              <h1 id="carousel-head">
+                REACH YOUR LIMITS AND GET TO THE NEXT LEVEL
+              </h1>
+              <p id="carousel-para">
+                Flex your charm with our energizing collection of Gym and
+                Fitness Pick Up Lines! Perfect for fitness buffs to spice up
+                their gym routine with a dash of romance. Lift your dating game
+                with these playful lines!
+              </p>
+            </div>
+            <div class="banner-btn-row">
+              <a href="#" class="btn-outline">LEARN MORE</a>
+              <a href="#" class="btn">JOIN NOW</a>
+            </div>
+          </div>
+          <div class="carousel-item item-two">
+            <div class="carousel-content">
+              <h1 id="carousel-head">
+                THE BODY YOU SEE THE STRUGGLE YOU DON'T
+              </h1>
+              <p id="carousel-para">
+                I’m an expert at giving blows to the head! How high can you
+                jump? You’ve already jumped into my heart. Do you like HIIT?
+                Stop jumping around in my head, it really hurts.Stop jumping
+                around in my head, it really hurts.
+              </p>
+            </div>
+            <div class="banner-btn-row">
+              <a href="#" class="btn-outline">LEARN MORE</a>
+            </div>
+          </div>
+          <div class="carousel-item item-three">
+            <div class="carousel-content">
+              <h1 id="carousel-head">
+                LET’S START THE GYM AND START TRAINING NOW
+              </h1>
+              <p id="carousel-para">
+                If I told you that you had a beautiful body, would you share
+                with me the training routine you used to attain it? Hey, I like
+                the way you elliptical. Want to share a sweat towel? Is that a
+                barbell in your pants
+              </p>
+            </div>
+            <div class="banner-btn-row">
+              <a href="#" class="btn">JOIN NOW</a>
+            </div>
+          </div>
+        </div>
+        <div class="banner-bottom">
+          <div class="bottom-left">
+            <div class="carousel-btn">
+              <button type="button" id="prevBtn">
+                <i id="prevIco" class="bi bi-play-circle-fill"></i>
+              </button>
+              <button type="button" id="nextBtn">
+                <i class="bi bi-play-circle-fill"></i>
+              </button>
+            </div>
+            <div class="carousel-pages">
+              <span id="current-page">01</span>
+              <div class="carousel-length">
+                <div class="active-length"></div>
+              </div>
+              <span>03</span>
+            </div>
+          </div>
+          <div class="bottom-right">
+            <span>Social</span>
+            <div class="social-line"></div>
+            <ul class="social-icons">
+              <li>
+                <a href="https://www.facebook.com/login/" target="_blank"
+                  ><img src="./icons/facebook.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/accounts/login/?hl=en"
+                  target="_blank"
+                  ><img src="./icons/instagram.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://x.com/i/flow/login" target="_blank"
+                  ><img src="./icons/twitter.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="mailto:abc@gmail.com" target="_blank"
+                  ><img src="./icons/mail.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- cards container -->
+      <div class="cards-container">
+        <div class="card-wrapper">
+          <div class="card-icon">
+            <img src="./icons/arm.svg" alt="" />
+          </div>
+          <div class="card-content">
+            <h3>Choose your meals</h3>
+            <p>
+              Transform your physique with our fitness plan your physique with
+              higher skill
+            </p>
+            <i class="bi bi-arrow-right"></i>
+          </div>
+        </div>
+        <div class="card-wrapper">
+          <div class="card-icon">
+            <img src="./icons/exercise.svg" alt="" />
+          </div>
+          <div class="card-content">
+            <h3>Choose your Trainer</h3>
+            <p>
+              Physical fitness is a state of health and well-being and, more
+              specifically and daily activities.
+            </p>
+            <i class="bi bi-arrow-right"></i>
+          </div>
+        </div>
+        <div class="card-wrapper">
+          <div class="card-icon">
+            <img src="./icons/punch.svg" alt="" />
+          </div>
+          <div class="card-content">
+            <h3>Complete Your Goals</h3>
+            <p>
+              Gym selfies have emerged as a potent tool for motivating exercise
+              adherence to health
+            </p>
+            <i class="bi bi-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- transform-container -->
+      <div class="transform-container">
+        <div class="transform-left">
+          <img src="./img/Rectangle 1.png" id="img-one" alt="" />
+          <img src="./img/Rectangle 2.png" id="img-two" alt="" />
+          <img src="./img/Rectangle 4.png" id="img-three" alt="" />
+        </div>
+        <div class="transform-right">
+          <h1>Transform your physique with our fitness plan.</h1>
+          <p>
+            <i class="bi bi-check-circle-fill"></i>Increase Muscle and Strength
+          </p>
+          <p><i class="bi bi-check-circle-fill"></i>Be Healthier than before</p>
+          <p><i class="bi bi-check-circle-fill"></i>Increase Stamina</p>
+          <div class="transform-row">
+            <a href="#" class="btn-outline">LEARN MORE</a>
+            <a href="#" class="btn">JOIN NOW</a>
+          </div>
+        </div>
+      </div>
+      <!-- Accordian-container -->
+      <div class="accordian-container">
+        <div class="accordian-left">
+          <p>Choose your meals</p>
+          <h1>Make Yourself Stronger than your best excuse</h1>
+          <div class="accordian-inner">
+            <div class="accordian-item">
+              <div class="accordian-header">
+                <div style="display: flex; gap: 30px">
+                  <div class="head-icon">
+                    <img src="./icons/door-open-outline.svg" alt="" />
+                  </div>
+                  <h5>Open Door Policy</h5>
+                </div>
+                <i id="plusIcon" class="bi bi-plus"></i>
+              </div>
+              <div class="accordian-body active">
+                <p>
+                  we listed some funny, cheesy, and dirty gym pickup lines,
+                  check them out! You may also try your pick up lines on
+                  eharmony
+                </p>
+              </div>
+            </div>
+            <div class="accordian-item">
+              <div class="accordian-header">
+                <div style="display: flex; gap: 30px">
+                  <div class="head-icon">
+                    <img src="./icons/exercise-yoga.svg" alt="" />
+                  </div>
+                  <h5>Fully Insured Tools</h5>
+                </div>
+                <i id="plusIcon" class="bi bi-plus"></i>
+              </div>
+              <div class="accordian-body hidden">
+                <p>
+                  Don’t be shy about using these gym related pick up lines with
+                  any guy at the gym, and don’t be concerned
+                </p>
+              </div>
+            </div>
+            <div class="accordian-item">
+              <div class="accordian-header">
+                <div style="display: flex; gap: 30px">
+                  <div class="head-icon">
+                    <img src="./icons/Vector.svg" alt="" />
+                  </div>
+                  <h5>Personal Space</h5>
+                </div>
+                <i id="plusIcon" class="bi bi-plus"></i>
+              </div>
+              <div class="accordian-body hidden">
+                <p>
+                  If I told you that you had a beautiful body, would you share
+                  with me the training routine you used to attain it?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordian-right">
+          <img src="./img/acc-img.png" alt="" />
+        </div>
+      </div>
+      <!-- form container -->
+      <div class="form-container">
+        <div class="form-left">
+          <img src="./img/form-img.png" alt="" />
+        </div>
+        <div class="form-right">
+          <h1>Let's start gym <span class="highlight">Training Now</span></h1>
+          <form action="" id="myForm">
+            <div class="form-row">
+              <div>
+                <input
+                  type="text"
+                  name=""
+                  id="inputText"
+                  placeholder="Enter You Name..."
+                  required
+                />
+                <h5 id="nameCheck" style="color: red">**Username is missing</h5>
+              </div>
+              <div>
+                <input
+                  type="t"
+                  name=""
+                  id="inputTele"
+                  placeholder="Numbers Phone..."
+                  required
+                />
+                <h5 id="telCheck" style="color: red">**Number is missing</h5>
+              </div>
+            </div>
+            <div>
+              <input
+                type="email"
+                name=""
+                id="inputMail"
+                placeholder="Your Email Address..."
+                required
+              />
+              <h5 id="mailcheck" style="color: red">**Mail id is missing</h5>
+            </div>
+            <button type="submit" id="formBtn">Let's Join Now</button>
+          </form>
+        </div>
+      </div>
+      <!-- testimonial container -->
+      <div class="testimonial-container">
+        <h1>Testimonials</h1>
+        <div class="testimonial-carousel owl-carousel owl-theme">
+          <div class="item">
+            <div class="testimonial-item">
+              <div class="test-head">
+                <img src="./icons/quote-left 1.png" alt="" />
+              </div>
+              <p>
+                don’t think I could have achieved the same fitness results as
+                fast as I did at any other gym. I have lost close to 40 pounds
+                and gained considerable improvements
+              </p>
+              <span class="star">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-half"></i>
+              </span>
+              <h5>hakey ozo</h5>
+              <p>Xyz company ceo</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimonial-item">
+              <div class="test-head">
+                <img src="./icons/quote-left 1.png" alt="" />
+              </div>
+              <p>
+                Struggling to build up the testimonials page of your fitness
+                website? Check out this guide on how to get more review
+              </p>
+              <span class="star">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-half"></i>
+              </span>
+              <h5>Randy koil</h5>
+              <p>cisue tech ceo</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimonial-item">
+              <div class="test-head">
+                <img src="./icons/quote-left 1.png" alt="" />
+              </div>
+              <p>
+                ActiveBody Fitness was established with the goal of improving
+                the quality of personal training services over what we found in
+                typical big-box gyms, and putting focus back
+              </p>
+              <span class="star">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-half"></i>
+              </span>
+              <h5>Narendra Modi</h5>
+              <p>President</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimonial-item">
+              <div class="test-head">
+                <img src="./icons/quote-left 1.png" alt="" />
+              </div>
+              <p>
+                ! I recently moved from NC to CT 3 months ago, and found Gale’s
+                Personal Training online in a google search. I was ready to
+                begin
+              </p>
+              <span class="star">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-half"></i>
+              </span>
+              <h5>Osama bin</h5>
+              <p>Wise techz ceo</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimonial-item">
+              <div class="test-head">
+                <img src="./icons/quote-left 1.png" alt="" />
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+              <span class="star">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-half"></i>
+              </span>
+              <h5>Henry kode</h5>
+              <p>Xyz Institute ceo</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimonial-item">
+              <div class="test-head">
+                <img src="./icons/quote-left 1.png" alt="" />
+              </div>
+              <p>
+                Testimonials are critical to generate new leads that convert to
+                clients. This article discusses the must-have features for your
+                fitness testimonials.
+              </p>
+              <span class="star">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-half"></i>
+              </span>
+              <h5>Goryan</h5>
+              <p>Apple ceo</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimonial-item">
+              <div class="test-head">
+                <img src="./icons/quote-left 1.png" alt="" />
+              </div>
+              <p>
+                MaxNRG Personal Training is a Melbourne based mobile personal
+                trainer team that has the most sort after health and fitness
+              </p>
+              <span class="star">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-half"></i>
+              </span>
+              <h5>Lody kial</h5>
+              <p>Xyz company ceo</p>
+            </div>
+          </div>
+        </div>
+        <div class="test-Btn" style="display: none">
+          <button type="button" class="btnTest" id="test-prev">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button type="button" class="btnTest" id="test-next">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+      <!-- footer container -->
+      <footer>
+        <div class="footer-row">
+          <div class="col">
+            <p class="footersub">Subscribe on our newsletter</p>
+            <p>
+              Get daily news on upcoming offers from many suppliers all over the
+              world
+            </p>
+          </div>
+          <div class="col form-mail">
+            <i class="bi bi-envelope-fill" id="mailIcon"></i>
+            <input
+              type="email"
+              name=""
+              id="inputmailtwo"
+              placeholder="Email.."
+              required
+            />
+            <button type="submit" id="newsBtn">Subscribe</button>
+          </div>
+        </div>
+        <div class="footer-row">
+          <div class="col footer-title">
+            READY FOR<br />
+            <span>AWESOME</span> LIFE?
+          </div>
+          <div class="col soc">
+            <a href="https://www.facebook.com/login/" target="_blank"
+              ><img src="./icons/fb.svg" alt="" srcset=""
+            /></a>
+            <a
+              href="https://www.instagram.com/accounts/login/?hl=en"
+              target="_blank"
+              ><img src="./icons/insta.svg" alt="" srcset=""
+            /></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank"
+              ><img src="./icons/linked.svg" alt="" srcset=""
+            /></a>
+          </div>
+        </div>
+        <div class="footer-row">
+          <div class="col">
+            <i class="bi bi-envelope-fill"></i
+            ><a href="mailto:fitkinclub@gmail.com">fitkinclub@gmail.com</a>
+          </div>
+          <div class="col condition">
+            <span>Terms & Conditions</span><span>Privacy policy</span>
+          </div>
+        </div>
+        <div class="copyright"><p>&copy;copyright@2016-2044 Fitkin</p></div>
+      </footer>
+    </div>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
+
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+    <script>
+      $(".mob-btn").click(function () {
+        // $(this).toggleClass("fa-times");
+        $(".mob-navigation-menu").toggleClass("active2");
+      });
+    </script>
+    <script src="./main.js"></script>
+  </body>
+</html>
