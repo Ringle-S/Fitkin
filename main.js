@@ -135,10 +135,13 @@ $(document).ready(function () {
   $("#inputMail").keypress(function () {
     isEmail();
   });
-
+  $("#inputmailthree").keypress(function () {
+    isEmailtwo();
+  });
   function isEmail() {
     let mail = $("#inputMail").val();
-    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    var regex =
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (regex.test(mail)) {
       $("#mailcheck").hide();
       $("#inputMail").removeClass("error");
@@ -147,6 +150,25 @@ $(document).ready(function () {
       $("#mailcheck").show();
       // $("#inputMail").addClass("error");
       $("#mailcheck").html("Invalid mail id");
+      emailError = false;
+      return false;
+    }
+  }
+
+  $("#mailcheckthree").hide();
+
+  function isEmailtwo() {
+    let mail = $("#inputmailthree").val();
+    var regex =
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (regex.test(mail)) {
+      $("#mailcheckthree").hide();
+      $("#inputmailthree").removeClass("error");
+      return true;
+    } else {
+      $("#mailcheckthree").show();
+      $("#inputMail").addClass("error");
+      $("#mailcheckthree").html("Invalid mail id");
       emailError = false;
       return false;
     }
@@ -167,7 +189,9 @@ $(document).ready(function () {
     } else {
       $("#telCheck").show();
       // $("#inputTele").addClass("error");
-      $("#telCheck").html("mobile number should be 10 length");
+      $("#telCheck").html(
+        "mobile number should be 10 length and should contain only number"
+      );
       mobileError = false;
       return false;
     }
