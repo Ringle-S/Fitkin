@@ -217,37 +217,38 @@ $(document).ready(function () {
 });
 
 // subscribe form
-$(document).ready(function () {
-  // Validate Email
+// $(document).ready(function () {
+//   // Validate Email
 
-  let emailError = true;
-  $("#inputmailtwo").keypress(function () {
-    isEmail();
-  });
-  function isEmail() {
-    let mail = $("#inputmailtwo").val();
-    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    if (regex.test(mail)) {
-      $("#inputMail").removeClass("error");
-      return true;
-    } else {
-      $("#inputmailtwo").addClass("error");
-      emailError = false;
-      return false;
-    }
-  }
+//   let emailError = true;
+//   $("#inputmailtwo").keypress(function () {
+//     isEmail();
+//   });
+//   function isEmail() {
+//     let mail = $("#inputmailtwo").val();
+//     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+//     if (regex.test(mail)) {
+//       $("#inputMail").removeClass("error");
+//       return true;
+//     } else {
+//       $("#inputmailtwo").addClass("error");
+//       $("#inputmailtwo").addClass("success");
+//       emailError = false;
+//       return false;
+//     }
+//   }
 
-  // Submit button
-  $("#newsBtn").click(function () {
-    isEmail();
+//   // Submit button
+//   $("#newsBtn").click(function () {
+//     isEmail();
 
-    if (emailError == true) {
-      return true;
-    } else {
-      return false;
-    }
-  });
-});
+//     if (emailError == true) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   });
+// });
 
 // // testimonial
 

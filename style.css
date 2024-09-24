@@ -500,7 +500,8 @@ ul {
   margin-top: 100px;
   padding: 75px 140px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
 }
 
 .form-right {
@@ -1073,14 +1074,14 @@ footer {
   .blogcards {
     display: grid;
     grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 570px 570px;
+    grid-template-rows: 520px 520px;
     gap: 30px;
     margin: 50px 0;
   }
   .storecards {
     display: grid;
-    grid-template-columns: 367px 367px;
-    grid-template-rows: 517px 517px 517px;
+    grid-template-columns: 367px 367px 367px;
+    grid-template-rows: 517px 517px;
     gap: 30px;
     margin: 50px 0;
   }
@@ -1108,13 +1109,14 @@ footer {
     width: 80%;
     padding: 75px 140px;
     margin: 100px 10%;
+    justify-content: center;
   }
   .form-container h1 {
     font-size: 44px;
   }
 
   .form-right {
-    width: 60%;
+    width: 40%;
   }
   .accordian-container {
     padding: 0 10%;
@@ -1153,7 +1155,7 @@ footer {
   .blogcards {
     display: grid;
     grid-template-columns: 400px 400px;
-    grid-template-rows: 570px 570px;
+    grid-template-rows: 520px 520px;
     gap: 30px;
     margin: 50px 0;
   }
@@ -1231,6 +1233,7 @@ footer {
     height: 608px;
     padding: 100px 100px;
     margin: 100px 10%;
+    justify-content: center;
   }
   #formBtn {
     font-size: 18px;
@@ -1250,12 +1253,9 @@ footer {
   }
 
   .form-container h1 {
-    font-size: 44px;
+    font-size: 34px;
   }
 
-  .form-right {
-    width: 60%;
-  }
   .accordian-container {
     padding: 0 10%;
   }
@@ -1283,6 +1283,11 @@ footer {
   .mob-btn {
     display: block;
   }
+  .storecards {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 517px 517px;
+  }
 }
 @media only screen and (max-width: 1000px) {
   .right-contact input {
@@ -1290,6 +1295,9 @@ footer {
   }
   .right-contact textarea {
     width: 500px;
+  }
+  .right-contact h2 {
+    text-align: center;
   }
   .conatct-conatiner {
     flex-direction: column;
@@ -1314,14 +1322,14 @@ footer {
   }
   .blogcards {
     display: grid;
-    grid-template-columns: 400px;
-    grid-template-rows: 570px 570px;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 520px 520px;
     gap: 30px;
     margin: 50px 0;
   }
   .storecards {
     display: grid;
-    grid-template-columns: 367px;
+    grid-template-columns: 367px 367px;
     grid-template-rows: 517px;
     gap: 30px;
     margin: 50px 0;
@@ -1401,10 +1409,13 @@ footer {
     margin-top: 100px;
   }
   /* Accordian-container */
-
+  form {
+    margin-top: 20px;
+  }
   .accordian-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 0% 5%;
+    gap: 50px;
   }
 
   .accordian-left h1 {
@@ -1417,7 +1428,9 @@ footer {
   .accordian-header {
     font-size: 28px;
   }
-
+  .accordian-right > img {
+    height: 500px;
+  }
   .accordian-body p {
     font-size: 16px;
   }
@@ -1437,10 +1450,10 @@ footer {
     display: none;
   }
   .form-row input {
-    width: 260px;
+    width: 240px;
   }
   #inputMail {
-    width: 540px;
+    width: 500px;
   }
   input {
     padding: 10px 14px;
@@ -1454,7 +1467,7 @@ footer {
   }
 
   .form-right {
-    width: 100%;
+    width: 80%;
   }
   .accordian-container {
     padding: 0 10%;
@@ -1465,7 +1478,10 @@ footer {
   .testimonial-item p {
     font-size: 14px;
   }
-
+  .testimonial-container {
+    width: 100%;
+    margin-top: 30px;
+  }
   /* footer container */
   footer {
     padding: 40px 40px;
@@ -1475,19 +1491,34 @@ footer {
   .footer-row {
     flex-direction: column;
   }
+  .right-top {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .storecards {
+    display: grid;
+    grid-template-columns: 367px;
+    grid-template-rows: 517px;
+  }
+  .blogcards {
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 520px;
+  }
 }
 @media only screen and (max-width: 750px) {
   .right-contact input {
-    width: 280px;
+    width: 400px;
   }
   .right-contact textarea {
-    width: 280px;
+    width: 400px;
   }
   .left-contact > h2 {
     font-size: 32px;
   }
   .right-top {
-    width: 280px;
+    /* width: 280px; */
   }
   .left-bottom h3 {
     font-size: 20px;
@@ -1508,7 +1539,7 @@ footer {
   .blogcards {
     display: grid;
     grid-template-columns: 300px;
-    grid-template-rows: 520px 520px;
+    grid-template-rows: 480px 480px;
     gap: 30px;
     margin: 50px 0;
   }
@@ -1558,7 +1589,7 @@ footer {
   }
   .testimonial-container {
     width: 100%;
-    height: 600px;
+    height: fit-content;
     margin-top: 0px;
   }
   .carousel-item {
@@ -1615,8 +1646,9 @@ footer {
   }
   .transform-row {
     gap: 15px;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
+    justify-content: center;
   }
   #img-one {
     width: 200px;
@@ -1629,7 +1661,7 @@ footer {
     width: 220px;
     position: absolute;
     z-index: 2;
-    left: 20%;
+    left: 50%;
     top: 90%;
   }
 
@@ -1637,7 +1669,7 @@ footer {
     width: 200px;
     position: absolute;
     z-index: 3;
-    left: 10%;
+    left: 40%;
     top: -100px;
   }
   .transform-left {
@@ -1648,7 +1680,10 @@ footer {
     margin-top: 100px;
   }
   /* Accordian-container */
-
+  .testimonial-container {
+    width: 100%;
+    margin: 50px 0;
+  }
   .accordian-container {
     flex-direction: column-reverse;
     padding: 0% 5%;
@@ -1666,7 +1701,7 @@ footer {
     width: 100%;
   }
   .accordian-header {
-    font-size: 17px;
+    font-size: 24px;
   }
 
   .accordian-body p {
@@ -1674,11 +1709,14 @@ footer {
   }
   .form-container {
     width: 90%;
-    height: 608px;
+    height: 500px;
 
-    margin: 50px 5%;
+    margin: 0px 5%;
     align-items: center;
     justify-content: center;
+  }
+  .accordian-right img {
+    width: auto;
   }
   #formBtn {
     font-size: 18px;
@@ -1688,10 +1726,10 @@ footer {
     display: none;
   }
   .form-row input {
-    width: 240px;
+    width: 400px;
   }
   #inputMail {
-    width: 240px;
+    width: 400px;
   }
   input {
     padding: 10px 14px;
@@ -1736,11 +1774,58 @@ footer {
   }
   .form-container {
     background-image: none;
+    padding: 0%;
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 500px) {
+  .right-contact input {
+    width: 300px;
+  }
+  .right-contact textarea {
+    width: 300px;
+  }
+  .package-container > h1 {
+    font-size: 32px;
+  }
+  .transform-row {
+    flex-direction: column;
+  }
+  .transform-left {
+    display: none;
+  }
+  .transform-container {
+    padding: 0 0 0 0;
+  }
   .carousel-item {
     padding-top: 20px;
+  }
+  .form-row input {
+    width: 280px;
+  }
+  #inputMail {
+    width: 280px;
+  }
+  #img-one {
+    display: none;
+  }
+  #img-two {
+    display: none;
+  }
+  #img-three {
+    left: 20%;
+  }
+  .accordian-right > img {
+    width: 200px;
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .right-contact input {
+    width: 280px;
+  }
+  .right-contact textarea {
+    width: 280px;
   }
 }
