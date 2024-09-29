@@ -274,3 +274,12 @@ owl.owlCarousel({
     },
   },
 });
+
+$(document).ready(function () {
+  $('input[type="text"]').on("keypress", function (event) {
+    var key = event.keyCode || event.which;
+    if (key >= 48 && key <= 57) {
+      event.preventDefault();
+    }
+  });
+});
