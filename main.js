@@ -217,6 +217,27 @@ $(document).ready(function () {
 });
 
 // subscribe form
+$(document).ready(function () {
+  $(document).on("submit", ".subscribe-form", function (e) {
+    e.preventDefault(); // Prevent default form submission
+
+    var email = $("#inputmailtwo").val();
+
+    // Basic email validation using regular expression
+    var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+    if (!emailRegex.test(email)) {
+      alert("Please enter a valid email address.");
+      return false;
+    }
+
+    // Perform additional validation or processing here if needed
+
+    // Show success message or perform other actions
+    alert("Subscription successful!");
+  });
+});
+
 // $(document).ready(function () {
 //   // Validate Email
 
@@ -229,10 +250,10 @@ $(document).ready(function () {
 //     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 //     if (regex.test(mail)) {
 //       $("#inputMail").removeClass("error");
+//       $("#inputmailtwo").addClass("success");
 //       return true;
 //     } else {
 //       $("#inputmailtwo").addClass("error");
-//       $("#inputmailtwo").addClass("success");
 //       emailError = false;
 //       return false;
 //     }
